@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en"dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="/css/font.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+</head>
+<body>
+
+    <div class="navbar__container">
+        <nav class="navbar">
+            <div class="navbar__logo">
+                <svg xmlns="http://www.w3.org/2000/svg" width="102" height="22" viewBox="0 0 102 22">
+                    <g fill-rule="evenodd">
+                        <path fill="#000" d="M102 5.946h-3.222v4.28H91.8v-4.28h-3.221v4.28h-5.637a1.878 1.878 0 0 1-1.879-1.872V5.946h-3.221v2.408a1.878 1.878 0 0 1-1.879 1.873 1.878 1.878 0 0 1-1.879-1.873V5.946h-3.221v2.408a1.878 1.878 0 0 1-1.879 1.873h-1.879V5.946h-3.22v4.28h-17.18v3.212h3.758v.535c0 2.656-2.167 4.816-4.831 4.816-2.664 0-4.832-2.16-4.832-4.816v-3.746H37.58v3.746c0 4.426 3.613 8.027 8.053 8.027 4.44 0 8.052-3.6 8.052-8.027v-.535H68.985a5.09 5.09 0 0 0 3.489-1.381 5.09 5.09 0 0 0 3.49 1.38 5.09 5.09 0 0 0 3.489-1.38 5.089 5.089 0 0 0 3.489 1.38H102V5.947z"></path>
+                        <path fill="#000" d="M84.702 19.297h3.854V22h3.304v-5.946h-7.158zM102 0h-6.561v2.973H102z"></path>
+                        <path fill="#FF5B35" d="M26.842 11.297H10.737V5.946h16.105zM26.842 22H0v-5.351h26.842z"></path>
+                    </g>
+                </svg>
+            </div>
+            <div class="navbar__icon">
+                <div class="bar bar_one"></div>
+                <div class="bar bar_two"></div>
+                <div class="bar bar_tree"></div>
+            </div>
+            <div class="navbar__list">
+                <a href="" class="navbar__list-items">ویدیوها</a>
+                <a href="" class="navbar__list-items">پشتیبانی</a>
+                <a href="" class="navbar__list-items">امور سهام</a>
+                <a href="" class="navbar__list-items">تپسی پک</a>
+                <a href="" class="navbar__list-items">فرصت های شغلی</a>
+                <a href="" class="navbar__list-items">وبلاگ</a>
+            </div>
+            <button class="btn btn--primary navbar__btn">دانلود تپسی</button>
+        </nav>
+    </div>
+    <section class="hero__section">
+        <picture>
+            <source srcset="./css/images/banner.webp" type="image/webp" media="(min-width: 768px)">
+            <source srcset="./css/images/banner.jpg" type="image/jpg" media="(min-width: 768px)">
+            <source srcset="./css/images/banner-mobile.webp" type="image/webp" media="(max-width: 768px)">
+            <source srcset="./css/images/banner-mobile.jpg" type="image/jpg" media="(max-width: 768px)">
+            <img alt="banner" src="css/images/banner.jpg" >
+         </picture>
+         <div class="hero_wrapper">
+            <div class="intro_btn">
+                <h1>تپسی</h1>
+                <h2>اپلیکیشن درخواست خودرو و پیک</h2>
+                <div class="intro_btn-pasanger">
+                    <button class="btn ">ورود و ثبت نام</button>
+                    <button class="btn ">ورود و ثبت نام</button>
+                    <button class="btn ">ورود و ثبت نام</button>
+                    <button class="btn ">ورود و ثبت نام</button>
+                </div>
+             </div>
+         </div>
+    </section>
+    <div class="services container">
+        <h2>سرویس های تپسی</h2>
+        <div class="tabs" id="nav-tab">
+            <a class="tab" data-tab-target="nav-classic-tab" >
+                 <img src="css/images/cc-classic.png" alt="tapsi-classic-icon">
+                <p>تپسی کلاسیک</p>
+            </a>
+            <a class="tab" data-tab-target="nav-tel-tab">
+                 <img src="css/images/cc-tel.png">
+                <p>تپسی تلفنی</p>
+            </a>
+            <a class="tab active" data-tab-target="nav-line-tab"> 
+                <img src="./css/images/cc-line.png" alt="tapsi-line-icon">
+                <p>تپسی لاین</p>
+            </a>
+            <a class="tab" data-tab-target="nav-motopeyk-tab"> 
+                <img src="./css/images/cc-motopeyk.png" alt="motopeyk-icon">
+                <p>موتوپیک</p>
+            </a>
+            <a class="tab" data-tab-target="nav-autopeyk-tab" > 
+                <img src="./css/images/cc-autopeyk.png" aria-label="autopeyk service icon" alt="autopeyk-icon">
+                <p>اتوپیک</p>
+            </a>
+            <a class="tab" data-tab-target="nav-plus-tab">
+                 <img src="./css/images/cc-plus.png" alt="tapsi-plus-icon">
+                <p>تپسی پلاس</p>
+            </a>
+            <a class="tab" data-tab-target="nav-hamyar-tab" >
+                 <img src="./css/images/cc-hamyar.png" alt="hamyar-icon">
+                <p>همیار</p>
+            </a>
+        </div>
+        <div class="fiture tab_content active" id="nav-classic-tab"  data-aos="fade-up"
+    data-aos-duration="1000">
+            <div class="fiture--detail">
+                <h2 class="future--title">
+                    تپسی کلاسیک
+                </h2>
+                <p class="fiture--text">
+                    پنل سازمانی تپسی، یک سامانه تحت وب است که به سادگی امکان درخواست هم‌زمان تعداد نامحدودی خودرو و پیک را برای کسب‌وکارها و سازمان‌ها فراهم می‌کند. و با استفاده از آن می‌توانید ماموریت های درون‌شهری و ارسال کالاهای خود را به سادگی مدیریت کنید.
+                </p>
+            </div>
+            <div class="fiture--image">
+                <img src="./css/images/cc-classic.png" alt="">
+            </div>
+        </div>
+        <div class="fiture tab_content" id="nav-tel-tab">
+            <div class="fiture--detail">
+                <h2 class="future--title">
+                    تپسی تلفنی
+                </h2>
+                <p class="fiture--text">
+                    پنل سازمانی تپسی، یک سامانه تحت وب است که به سادگی امکان درخواست هم‌زمان تعداد نامحدودی خودرو و پیک را برای کسب‌وکارها و سازمان‌ها فراهم می‌کند. و با استفاده از آن می‌توانید ماموریت های درون‌شهری و ارسال کالاهای خود را به سادگی مدیریت کنید.
+                </p>
+            </div>
+            <div class="fiture--image">
+                <img src="./css/images/cc-tel.png" alt="">
+            </div>
+        </div>
+        <div class="fiture tab_content" id="nav-line-tab">
+            <div class="fiture--detail">
+                <h2 class="future--title">
+                    تپسی لاین
+                </h2>
+                <p class="fiture--text">
+                    پنل سازمانی تپسی، یک سامانه تحت وب است که به سادگی امکان درخواست هم‌زمان تعداد نامحدودی خودرو و پیک را برای کسب‌وکارها و سازمان‌ها فراهم می‌کند. و با استفاده از آن می‌توانید ماموریت های درون‌شهری و ارسال کالاهای خود را به سادگی مدیریت کنید.
+                </p>
+            </div>
+            <div class="fiture--image">
+                <img src="./css/images/cc-line.png" alt="">
+            </div>
+        </div>
+        <div class="fiture tab_content" id="nav-motopeyk-tab">
+            <div class="fiture--detail">
+                <h2 class="future--title">
+                    موتوپیک 
+                </h2>
+                <p class="fiture--text">
+                    پنل سازمانی تپسی، یک سامانه تحت وب است که به سادگی امکان درخواست هم‌زمان تعداد نامحدودی خودرو و پیک را برای کسب‌وکارها و سازمان‌ها فراهم می‌کند. و با استفاده از آن می‌توانید ماموریت های درون‌شهری و ارسال کالاهای خود را به سادگی مدیریت کنید.
+                </p>
+            </div>
+            <div class="fiture--image">
+                <img src="./css/images/cc-motopeyk.png" alt="">
+            </div>
+        </div>
+        <div class="fiture tab_content"  id="nav-autopeyk-tab">
+            <div class="fiture--detail">
+                <h2 class="future--title">
+                    اتو پیک
+                </h2>
+                <p class="fiture--text">
+                    پنل سازمانی تپسی، یک سامانه تحت وب است که به سادگی امکان درخواست هم‌زمان تعداد نامحدودی خودرو و پیک را برای کسب‌وکارها و سازمان‌ها فراهم می‌کند. و با استفاده از آن می‌توانید ماموریت های درون‌شهری و ارسال کالاهای خود را به سادگی مدیریت کنید.
+                </p>
+            </div>
+            <div class="fiture--image">
+                <img src="./css/images/cc-autopeyk.png" alt="">
+            </div>
+        </div>
+        <div class="fiture tab_content" id="nav-plus-tab">
+            <div class="fiture--detail">
+                <h2 class="future--title">
+                   تپسی پلاس
+                </h2>
+                <p class="fiture--text">
+                    پنل سازمانی تپسی، یک سامانه تحت وب است که به سادگی امکان درخواست هم‌زمان تعداد نامحدودی خودرو و پیک را برای کسب‌وکارها و سازمان‌ها فراهم می‌کند. و با استفاده از آن می‌توانید ماموریت های درون‌شهری و ارسال کالاهای خود را به سادگی مدیریت کنید.
+                </p>
+            </div>
+            <div class="fiture--image">
+                <img src="./css/images/cc-plus.png" alt="">
+            </div>
+        </div>
+        <div class="fiture tab_content" id="nav-hamyar-tab">
+            <div class="fiture--detail">
+                <h2 class="future--title">
+                    همیار
+                </h2>
+                <p class="fiture--text">
+                    پنل سازمانی تپسی، یک سامانه تحت وب است که به سادگی امکان درخواست هم‌زمان تعداد نامحدودی خودرو و پیک را برای کسب‌وکارها و سازمان‌ها فراهم می‌کند. و با استفاده از آن می‌توانید ماموریت های درون‌شهری و ارسال کالاهای خود را به سادگی مدیریت کنید.
+                </p>
+            </div>
+            <div class="fiture--image">
+                <img src="./css/images/cc-hamyar.png" alt="">
+            </div>
+        </div>
+        
+    </div>
+    <section class="fiture container"  data-aos="fade-up"
+    data-aos-duration="2000">
+        <div class="fiture--detail">
+            <h2 class="future--title">
+                اتو پیک
+            </h2>
+            <p class="fiture--text">
+                پنل سازمانی تپسی، یک سامانه تحت وب است که به سادگی امکان درخواست هم‌زمان تعداد نامحدودی خودرو و پیک را برای کسب‌وکارها و سازمان‌ها فراهم می‌کند. و با استفاده از آن می‌توانید ماموریت های درون‌شهری و ارسال کالاهای خود را به سادگی مدیریت کنید.
+            </p>
+            <button class="btn btn--primary">ورود و ثبت نام پنل سازمانی</button>
+        </div>
+        <div class="fiture--image">
+            <img src="./css/images/i-mac.webp" alt="">
+        </div>
+    </section>
+    <section class="fiture container change"  data-aos="fade-up"
+    data-aos-duration="1000">
+        <div class="fiture--detail">
+            <h2 class="future--title">
+                اتو پیک
+            </h2>
+            <p class="fiture--text">
+                پنل سازمانی تپسی، یک سامانه تحت وب است که به سادگی امکان درخواست هم‌زمان تعداد نامحدودی خودرو و پیک را برای کسب‌وکارها و سازمان‌ها فراهم می‌کند. و با استفاده از آن می‌توانید ماموریت های درون‌شهری و ارسال کالاهای خود را به سادگی مدیریت کنید.
+            </p>
+            <button class="btn btn--primary">ورود و ثبت نام پنل سازمانی</button>
+        </div>
+        <div class="fiture--image">
+            <img src="./css/images/i-mac.webp" alt="">
+        </div>
+    </section>
+    <section class="block-plan">
+        <div class="plans" data-aos="fade-up"
+        data-aos-duration="2000">
+            <div class="card">
+                <div class="card--header card--secoundary">
+                    <div class="plan--name">
+                        <h3>عادی</h3>
+                        <span  class="badge badge--secoundary">10% off</span>
+                        </div>
+                        <div class="plan--discription">
+                            <span class="price">
+                                290,000</span>
+                                <span class="billing--cycle"> ماهانه/تومان</span>
+                            <span class="discription">سرویس ماشین های معمولی</span>
+                        </div>
+                </div>
+                <div class="card--body">
+                    <ul class="list--tick">
+                        <li class="list--item">کیفیت معمولی</li>
+                        <li class="list--item"> سرو صدا معمولی</li>
+                        <li class="list--item">زمان متوسط</li>
+                         <li class="list--item">سرویس روزانه</li>
+                    </ul>
+                    <button class="btn btn--primary-light btn--block"> ثبت سفارش</button>
+                </div>
+            </div>
+        </div>
+        <div class="plans"  data-aos="fade-up"
+        data-aos-duration="2000">  
+            <div class="plans plan--papular">
+            <div class="card">
+                <div class="card--header card--primary">
+                    <div class="plan--name">
+                        <h3>اقتصادی</h3>
+                        <span  class="badge badge--primary">15% off</span>
+                        </div>
+                        <div class="plan--discription">
+                            <span class="price">
+                                390,000</span>
+                                <span class="billing--cycle"> ماهانه/تومان</span>
+                            <span class="discription">سرویس ماشین های کلاسیک</span>
+                        </div>
+                </div>
+                <div class="card--body">
+                    <ul class="list--tick">
+                        <li class="list--item">کیفیت عالی</li>
+                        <li class="list--item">کم سرو صدا</li>
+                        <li class="list--item">زمان محدود</li>
+                         <li class="list--item">سرویس روزانه</li>
+                    </ul>
+                    <button class="btn btn--primary btn--block"> ثبت سفارش</button>
+                </div>
+            </div>
+        </div>
+    </div>
+        <div class="plans"  data-aos="fade-up"
+        data-aos-duration="2000">
+            <div class="plans ">
+                <div class="card">
+                    <div class="card--header card--secoundary">
+                        <div class="plan--name">
+                            <h3>ویژه</h3>
+                            <span  class="badge badge--secoundary">20% off</span>
+                            </div>
+                            <div class="plan--discription">
+                                <span class="price">
+                                    490,000</span>
+                                    <span class="billing--cycle"> ماهانه/تومان</span>
+                                <span class="discription">سرویس ماشین های کلاسیک</span>
+                            </div>
+                    </div>
+                    <div class="card--body">
+                        <ul class="list--tick">
+                            <li class="list--item">کیفیت خیلی خفن</li>
+                            <li class="list--item">بی سرو صدا</li>
+                            <li class="list--item">زمان نامحدود</li>
+                             <li class="list--item">سرویس نامحدود</li>
+                        </ul>
+                        <button class="btn btn--primary-light btn--block"> ثبت سفارش</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="contact">
+        <div class="contact__us">
+            <div class="contact__us--connect">
+                <div class="contact__us--connect-item">
+                    <img src="./css/images/icons8-letter-24.png" alt="">
+                    <p>maryam.arzegar@gmail.com</p>
+                </div>
+                <div class="contact__us--connect-item">
+                    <img src="./css/images/icons8-cellphone-24.png" alt="">
+                    <p>09916392502</p>
+                </div>
+                <div class="contact__us--connect-item">
+                    <img src="./css/images/icons8-location-24.png" alt="">
+                    <p>tehran,iran</p>
+                </div>
+            </div>
+            <div class="contact__us--map"> 
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12950.809955601033!2d51.364077339334834!3d35.75811660916466!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3f8e0798050e5be3%3A0xcbf7426c83471fd1!2sShahrak-e%20Gharb%2C%20District%202%2C%20Tehran%2C%20Tehran%20Province%2C%20Iran!5e0!3m2!1sen!2s!4v1709993803222!5m2!1sen!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <div class="contact__us--social">
+                <div class="contact__us--social-item">
+                    <img src="/css/images/icons8-linkedin-30.png" alt="">
+                </div>
+                <div class="contact__us--social-item">
+                    <img src="/css/images/icons8-facebook-50.png" alt="">
+                </div>
+                <div class="contact__us--social-item">
+                    <img src="./css/images/icons8-twitter-50.png" alt="">
+                </div>
+            </div>
+        </div>
+            <form class="contact__us__form">
+                <label for="">نظرات شما</label>
+                <input type="text" placeholder="نام و نام خانوادگی" >
+                <input type="email" placeholder="ایمیل خود را وارد کنید">
+                <textarea name="" id="" cols="30" rows="10"></textarea>
+                <button class="btn btn--primary">ارسال نظرات</button>
+    
+            </form>
+    </section>
+    <footer class="footer">
+
+        <div class="footer__items">
+            <div class="footer__items-item">
+                <div class="footer__logo ">
+                    <img src="./css/images/tapsi-logo-white.svg" alt="">
+                    <p>اپلیکیشن درخواست خودرو وپیک</p>
+                </div>
+            </div>
+            <div class="footer__items-item">
+                <h2>تپسی</h2>
+                <p>وبلاگ تپسی</p>
+                <p>فرصت شغلی</p>
+                <p>تماس با ما</p>
+                <p>لوگو و هویت سازمانی</p>
+                <p>استخدام و بازاریاب</p>
+            </div>
+            <div class="footer__items-item">
+                <h2>مسافران</h2>
+                <p>وبلاگ تپسی</p>
+                <p>فرصت شغلی</p>
+                <p>تماس با ما</p>
+                <p>لوگو و هویت سازمانی</p>
+                <p>استخدام و بازاریاب</p>
+            </div>
+            <div class="footer__items-item">
+                <h2>رانندگان</h2>
+                <p>وبلاگ تپسی</p>
+                <p>فرصت شغلی</p>
+                <p>تماس با ما</p>
+                <p>لوگو و هویت سازمانی</p>
+                <p>لوگو و هویت سازمانی</p>
+                <p>استخدام و بازاریاب</p>
+            </div>
+            <div class="footer__items-item">
+                <h2>کسب و کارها</h2>
+                <p>وبلاگ تپسی</p>
+                <p>فرصت شغلی</p>
+            </div>
+        </div>
+        <div class="footer__Enamad">
+            <img src="./css/images/etehadiyeenamad.png" alt="">
+            <img src="./css/images/logoenamad2.png" alt="">
+            <img src="./css/images/logoenamad.png" alt="">
+        </div>
+        <p>تمامی حقوق مادی و معنوی این سایت متعلق به تپسی است</p>
+        <div class="footer__social">
+            <img src="./css/images/icons8-facebook-50.png" alt="">
+            <img src="./css/images/icons8-linkedin-30.png" alt="">
+            <img src="./css/images/icons8-cellphone-24.png" alt="">
+            <img src="./css/images/icons8-cellphone-24.png" alt="">
+            <img src="./css/images/icons8-facebook-50.png" alt="">
+    
+        </div>
+    </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+      </script>
+<script src="main.js"></script>
+</body>
+</html>
